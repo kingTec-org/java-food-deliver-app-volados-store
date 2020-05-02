@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/app_text_black6"
+    android:paddingBottom="@dimen/text_normal">
+
+    <View
+        android:id="@+id/vBottom1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/text_normal"
+        android:background="@drawable/shadow_other_header" />
+
+    <com.obs.CustomTextView
+        android:id="@+id/tvProblem"
+        style="@style/ClanProForUBER_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vBottom1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/contact_driver"
+        android:textColor="@color/app_text_black3"
+        android:textSize="@dimen/text_normal" />
+
+    <RelativeLayout
+        android:id="@+id/rltContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvProblem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/text_normal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civDriverImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ProgressBar
+            android:id="@+id/driverprogressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/linearLayout"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/gray"
+            android:indeterminateTintMode="src_atop"
+            android:padding="5dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_toEndOf="@+id/civDriverImage"
+            android:orientation="vertical">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvDriverName"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Phillps"
+                android:textAlignment="center"
+                android:textColor="@color/app_text_black3"
+                android:textSize="@dimen/text_normal" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvDriverNumber"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="(222) 555-1234"
+                android:textColor="@color/app_text_black5"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <com.obs.CustomTextView
+        android:id="@+id/tvVechileNumber"
+        style="@style/ClanProForUBER_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rltContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_xsmall"
+        android:gravity="center_horizontal"
+        android:text="E204 Courier - Pulsar"
+        android:textColor="@color/app_text_black3"
+        android:textSize="@dimen/text_normal" />
+
+
+    <com.obs.CustomTextView
+        android:id="@+id/tvDriverSupport"
+        style="@style/ClanProForUBER_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvVechileNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/support"
+        android:textColor="@color/app_text_black3"
+        android:textSize="@dimen/text_normal"
+        android:visibility="gone" />
+
+</RelativeLayout>

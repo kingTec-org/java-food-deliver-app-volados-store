@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rltOrderItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="@string/layout_direction"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:background="@drawable/item_background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:orientation="vertical">
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvOrderId"
+            style="@style/ClanProForUBER_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1234"
+            android:textColor="@color/ub__white"
+            android:textSize="@dimen/text_normal" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvOrderName"
+            style="@style/ClanProForUBER_News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="1 item for Siva"
+            android:textColor="@color/ub__white"
+            android:textSize="@dimen/text_medium" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layoutDirection="ltr"
+        android:padding="@dimen/margin_xsmall">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/header"
+            android:layout_height="@dimen/header"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:layoutDirection="rtl"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/circulars"
+            android:secondaryProgress="100" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvTime"
+            style="@style/ClanProForUBER_News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:text="1\nmin"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civUserImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rltTime"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/shadow_black_row" />
+</RelativeLayout>

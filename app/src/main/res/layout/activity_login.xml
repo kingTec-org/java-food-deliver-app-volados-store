@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/app_back_color"
+    tools:context="gofereatsrestarant.views.login.LoginActivity">
+    <!--<include layout="@layout/header"
+        android:visibility="visible"/>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:src="@drawable/applogo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_white"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_small"
+                android:layout_gravity="start">
+
+                <!--<android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true">-->
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edtEmail"
+                    style="@style/ClanProForUBER_News"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:gravity="start"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingStart="@dimen/margin_xsmall"
+                    android:paddingTop="@dimen/margin_small"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/app_text_black1"
+                    android:textColorHint="@color/app_text_black1"
+                    android:textSize="@dimen/text_normal"
+                   android:textAlignment="viewStart"
+
+                    />
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/shadow_header" />
+                <!--<android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilPassword"
+                    app:passwordToggleEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true">-->
+
+                <com.obs.CustomEditText
+                    android:id="@+id/edtPassWord"
+                    style="@style/ClanProForUBER_News"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingStart="@dimen/margin_xsmall"
+                    android:paddingTop="@dimen/margin_small"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/app_text_black1"
+                    android:textColorHint="@color/app_text_black1"
+                    android:textSize="@dimen/text_normal"
+                    android:textAlignment="viewStart"/>
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <com.obs.CustomTextView
+                    android:id="@+id/tvError"
+                    style="@style/ClanProForUBER_News"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:background="?attr/selectableItemBackground"
+                    android:text=""
+                    android:textColor="@color/ub__red"
+                    android:textSize="@dimen/text_medium"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.obs.CustomButton
+                android:id="@+id/btnSignIn"
+                style="@style/ClanProForUBER_News"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/background_green"
+                android:clickable="true"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_xlarge" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvForgotPassword"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:text="@string/forgot_password"
+                android:textColor="@color/ub__white"
+                android:textSize="@dimen/text_normal"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/languagelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_white"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/languagetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:transitionName="social"
+
+                    />
+
+                <TextView
+                    android:id="@+id/language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text=""
+                    android:paddingEnd="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/apptheme"
+                    android:textSize="16sp"
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

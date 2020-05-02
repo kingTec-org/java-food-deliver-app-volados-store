@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="gofereatsrestarant.views.main.DelayOrderActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvorderId"
+            style="@style/ClanProForUBER_News"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:hint="@string/order"
+            android:padding="5dp"
+            android:text="" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvorderstatus"
+            style="@style/ClanProForUBER_News"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvorderId"
+            android:layout_marginTop="20dp"
+            android:hint="@string/order_details"
+            android:lines="2"
+
+            android:padding="5dp"
+            android:text="" />
+
+        <com.obs.CustomButton
+            android:id="@+id/btnTryAgain"
+            style="@style/ClanProForUBER_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvorderstatus"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_green"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/margin_small"
+            android:text="@string/tryagain"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnTryAgain"
+            android:background="@drawable/background_green_outline">
+
+            <com.obs.CustomTextView
+                android:id="@+id/btnContact"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_white"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/margin_small"
+                android:text="Contact Admin"
+                android:textAllCaps="true"
+                android:textColor="@color/apptheme"
+                android:textSize="16dp" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvContactnumb"
+                style="@style/ClanProForUBER_News"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/height_medium"
+                android:drawableStart="@drawable/callbutton"
+                android:drawablePadding="@dimen/margin_small"
+                android:drawableTint="@color/apptheme"
+                android:gravity="center_horizontal"
+                android:hint="1800 000 000"
+                android:text=""
+                android:textSize="@dimen/text_medium" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

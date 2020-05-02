@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <include layout="@layout/toolbar" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <gofereatsrestarant.views.customize.ExpandableRecyclerView
+            android:id="@+id/rvMainMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="always"
+            android:scrollbars="none"
+            android:textAlignment="viewStart"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <RelativeLayout
+            android:id="@+id/rltEmptylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/margin_normal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivOrdericon"
+                android:layout_width="@dimen/height_normal"
+                android:layout_height="@dimen/height_normal"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/menu"
+                android:tint="@color/text_dark" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvEmptyMenu"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivOrdericon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/you_have_no_menu_items"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_large" />
+        </RelativeLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/apptheme"
+        app:headerLayout="@layout/nav_header"
+        app:itemBackground="@drawable/nav_item_background"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@drawable/nav_item_text"
+        app:menu="@menu/menu_navigation" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

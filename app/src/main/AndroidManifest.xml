@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="gofereatsrestarant">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".configs.AppController"
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup"
+        android:supportsRtl="true">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <activity
+            android:name=".views.splash.SplashActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="net.hockeyapp.android.appIdentifier"
+            android:value="${HOCKEYAPP_APP_ID}" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".pushnotification.MyFirebaseMessagingService"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT"
+                    android:theme="@style/Theme.AppCompat" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".pushnotification.MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".views.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".views.login.ForgotPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".views.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent" />
+        <activity
+            android:name=".views.main.OrderDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent" />
+        <activity
+            android:name=".views.main.MapsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent" />
+        <activity
+            android:name=".views.main.OrderHistory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent" />
+        <activity
+            android:name=".views.main.OrderHistoryDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent" />
+        <activity
+            android:name=".views.main.menu.MenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent" />
+        <activity
+            android:name=".views.main.menu.SubMenuItemActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent" />
+        <activity
+            android:name=".views.main.menu.MenuItemActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent" />
+        <activity
+            android:name=".views.main.CancelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".views.main.DelayOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".views.login.Logout"
+            android:theme="@style/MaterialDialogSheet" />
+        <activity
+            android:name=".views.main.menu.ResendOrderRequest"
+            android:label="@string/title_activity_resend_order_request"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTransulent" />
+
+        <activity
+            android:name=".views.commondialog.ShowDialog"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="gofereatsrestarant.views.main.menu.SubMenuItemActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <gofereatsrestarant.views.customize.CustomRecyclerView
+        android:id="@+id/rvSubMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="always"
+        android:scrollbars="none" />
+</RelativeLayout>

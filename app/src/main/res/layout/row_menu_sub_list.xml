@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rltMenuItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="@string/layout_direction"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rltSubMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_normal"
+        android:paddingStart="@dimen/margin_normal"
+        android:paddingTop="@dimen/margin_normal">
+
+        <ImageView
+            android:id="@+id/ivMenuImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/gray"
+            android:indeterminateTintMode="src_atop"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_toStartOf="@+id/rltMenuVisible"
+            android:layout_toEndOf="@+id/ivMenuImage"
+            android:orientation="vertical">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvMenuName"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Spicy Fire"
+                android:textColor="@color/app_text_black3"
+                android:textSize="@dimen/text_large" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvMenuPrice"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="$120"
+                android:textColor="@color/app_text_black3"
+                android:textSize="@dimen/text_large" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltMenuVisible"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/ivMenuVisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/eye" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@color/app_text_black5" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rltSubMenu"
+        android:background="@drawable/shadow_other_header" />
+</RelativeLayout>

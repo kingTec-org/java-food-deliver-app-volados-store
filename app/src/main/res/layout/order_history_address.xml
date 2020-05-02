@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_weight="2"
+    android:divider="@drawable/gray_divider"
+    android:dividerPadding="5dp"
+    android:orientation="horizontal"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:id="@+id/lltPick"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.obs.CustomTextView
+            style="@style/ClanProForUBER_Book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_xsmall"
+            android:text="@string/pick_up_address"
+            android:textColor="@color/app_text_black2"
+            android:textSize="@dimen/text_normal" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvPickup"
+            style="@style/ClanProForUBER_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrderStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/app_text_black4"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lltdrop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.obs.CustomTextView
+            style="@style/ClanProForUBER_Book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_xsmall"
+            android:text="@string/drop_address"
+            android:textColor="@color/app_text_black2"
+            android:textSize="@dimen/text_normal" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvDrop"
+            style="@style/ClanProForUBER_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/app_text_black4"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+
+</LinearLayout>

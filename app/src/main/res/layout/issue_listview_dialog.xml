@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction">
+
+    <ListView
+        android:id="@+id/lvIssues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvIssues"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.obs.CustomButton
+            android:id="@+id/btnCancelIssue"
+            style="@style/ClanProForUBER_News"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_white"
+            android:text="@string/issue_cancel" />
+
+        <com.obs.CustomButton
+            android:id="@+id/btnOkIssue"
+            style="@style/ClanProForUBER_News"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_white"
+            android:text="@string/done" />
+    </LinearLayout>
+</RelativeLayout>

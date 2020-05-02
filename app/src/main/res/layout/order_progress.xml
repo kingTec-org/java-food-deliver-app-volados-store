@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="@string/layout_direction">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@drawable/shadow_other_header" />
+
+    <LinearLayout
+        android:id="@+id/lltStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/ivStep1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_normal"
+            android:layout_weight="1"
+            android:src="@drawable/check1"
+            android:backgroundTint="@color/apptheme"/>
+
+        <ImageView
+            android:id="@+id/ivStep2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_normal"
+            android:layout_weight="1"
+            android:src="@drawable/check1gray" />
+
+        <ImageView
+            android:id="@+id/ivStep3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_normal"
+            android:layout_weight="1"
+            android:src="@drawable/check1gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lltStep"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvAccept"
+                style="@style/ClanProForUBER_News"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/order_accepted"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/app_text_black5"
+                android:textSize="@dimen/text_small" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvAcceptTime"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAccept"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/app_text_black3"
+                android:textSize="@dimen/text_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvPickup"
+                style="@style/ClanProForUBER_News"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/picking_up"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/app_text_black5"
+                android:textSize="@dimen/text_small" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvPickupTime"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPickup"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/app_text_black3"
+                android:textSize="@dimen/text_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvDelivery"
+                style="@style/ClanProForUBER_News"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_estimate"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/app_text_black5"
+                android:textSize="@dimen/text_small" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvDeliveryTime"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDelivery"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/app_text_black3"
+                android:textSize="@dimen/text_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction">
+
+    <RelativeLayout
+        android:id="@+id/rltIssues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small">
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvIssues"
+            style="@style/ClanProForUBER_News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_small"
+            android:text="Late To Drop"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <ImageView
+            android:id="@+id/ivAvailableTick"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:padding="@dimen/margin_xsmall"
+            android:src="@drawable/greentick"
+            android:tint="@color/apptheme"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY appname "GoferGrocery Store">]>
+<resources>
+
+    <string name="app_name">&appname;</string>
+
+    <string name="network_failure">Por favor, verifique sua conexão à internet</string>
+    <string name="internal_server_error">Por favor, tente novamente algumas vezes.</string>
+    <string name="layout_direction">0</string>
+    <string name="login">"Entrar"</string>
+    <string name="email">"O email"</string>
+    <string name="email_error">"Digite um endereço de e-mail válido"</string>
+    <string name="password">"Senha"</string>
+    <string name="password_error">"Senha mínima de 6 caracteres"</string>
+    <string name="forgot_password">"Esqueceu a senha?"</string>
+    <string name="forgot_passwords">"Esqueceu a senha"</string>
+    <string name="reset_password_msg">"Digite seu e-mail para redefinir sua senha"</string>
+    <string name="submit">"Enviar"</string>
+    <string name="new_order">"Novo pedido"</string>
+    <string name="order_empty">"O pedido está vazio"</string>
+    <string name="out_for_delivery">"Pronto para entrega"</string>
+    <string name="scheduled">"Agendado para "</string>
+    <string name="recently_completed">"Recentemente concluído"</string>
+    <string name="accepting_order">"Aceitando pedidos"</string>
+    <string name="accept_orders">"Aceitar pedidos"</string>
+    <string name="pause_new_orders">"Pausar novos pedidos"</string>
+    <string name="orders_paused">"Entrada de pedidos em pausa"</string>
+    <string name="orders">"Pedidos"</string>
+    <string name="order_history">"Histórico de pedidos"</string>
+    <string name="menu">"Cardápio"</string>
+    <string name="logout">"Sair"</string>
+    <string name="order">Pedido</string>
+    <string name="order_details">detalhes do pedido</string>
+    <string name="pickup">Colecta</string>
+    <string name="addon">"Aditivo"</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="tax">IVA</string>
+    <string name="order_msg">"Já está pronto? O estafeta está a cerca de 7 minutos"</string>
+    <string name="food_done">Pedido pronto</string>
+    <string name="order_accepted">Pedido aceito</string>
+    <string name="picking_up">Fazendo colecta</string>
+    <string name="delivery_estimate">Estimativa de entrega</string>
+    <string name="problem_let_customer">Algum Problema? Informe ao cliente</string>
+    <string name="delay_order">Atraso no pedido</string>
+    <string name="cancel_order">Cancelar pedido</string>
+    <string name="other_reason">Outros motivos</string>
+    <string name="delay_reason">Motivos de atraso</string>
+    <string name="cancel">Cancelar</string>
+    <string name="select_delay_time">Seleccionar tempo de atraso</string>
+    <string name="select_cancel_reason">Seleccionar motivo</string>
+    <string name="support">Suporte</string>
+    <string name="completed">Concluído</string>
+    <string name="track_order">Localizar Estafeta</string>
+    <string name="available">"Disponível"</string>
+    <string name="unavailable_today">"Indisponível"</string>
+    <string name="unavailable_indefinitely">"Indisponível Por Tempo indeterminado"</string>
+    <string name="signout">"Sair"</string>
+    <string name="signout_msg">"Tem certeza de que deseja sair?"</string>
+    <string name="issue_cancel">Cancelar</string>
+    <string name="done">Concluído</string>
+    <string name="cancelled">Cancelado</string>
+    <string name="please_enable_permissions">Active as permissões do aplicativo</string>
+    <string name="please_enable_location">Active os serviços de localização</string>
+    <string name="you_have_no_orders">Você não tem pedidos</string>
+    <string name="you_have_no_menu_items">Você não possui itens no menu</string>
+    <string name="you_have_no_past_orders">Você não tem pedidos</string>
+    <string name="back_to_exit">Pressione novamente para sair.</string>
+    <string name="title_activity_resend_order_request">Reenvie pedido</string>
+    <string name="tryagain">Tente novamente</string>
+    <string name="contact_admin">Contactar Suporte &appname;</string>
+    <string name="order_notes">Notas de pedidos</string>
+    <string name="pick_up_later">Colectar mais tarde</string>
+    <string name="item_for">Item para</string>
+    <string name="scheduled_order">"Pedido agendado"</string>
+    <string name="access_fee">Taxa de acesso</string>
+    <string name="total">Total</string>
+    <string name="penalty">Penalidade</string>
+    <string name="order_id_symbol">ID do pedido</string>
+    <string name="order_id">ID do pedido</string>
+    <string name="applied_penalty">Penalidade aplicada</string>
+    <string name="contact_driver">Problema? Informe ao estafeta</string>
+    <string name="courier">Estafeta</string>
+    <string-array name="language">
+        <item>English</item>
+        <item>عربى</item>
+        <item>Português</item>
+    </string-array>
+    <string name="font_UBERBook" translatable="false">"ClanProForUBER-Book"</string>
+    <string name="font_UBERMedium" translatable="false">"ClanProForUBER-Medium"</string>
+    <string name="font_UBERNews" translatable="false">"ClanProForUBER-News"</string>
+    <string name="selectcurrency">"Escolha a moeda"</string>
+    <string name="selectlanguage">Seleccione o idioma</string>
+    <string name="language">Língua</string>
+    <string name="review">Rever</string>
+    <string name="user">Do utilizador</string>
+    <string name="pick_up_address">Endereço de retirada</string>
+    <string name="drop_address">Endereço de entrega</string>
+    <string-array name="languageCode" translatable="false">
+        <item>en</item>
+        <item>ar</item>
+        <item>pt</item>
+    </string-array>
+    <string name="minutes">Mins</string>
+    <string name="loading">Processando ...</string>
+    <string name="okay">Está bem</string>
+
+</resources>

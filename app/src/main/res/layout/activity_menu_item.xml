@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="gofereatsrestarant.views.main.menu.MenuItemActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rltMenuImage"
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+
+                <ImageView
+                    android:id="@+id/ivMenuImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_transparent"
+                    android:scaleType="fitXY" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/gray"
+                    android:indeterminateTintMode="src_atop"
+                    android:padding="5dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_transparent" />
+            </RelativeLayout>
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvMenuName"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/app_text_black3"
+                android:textSize="@dimen/text_xlarge" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="@color/app_text_black3" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvMenuDescription"
+                style="@style/ClanProForUBER_News"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/app_text_black4"
+                android:textSize="@dimen/text_small"
+                android:textDirection="rtl"
+                />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvMenuAddOns"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/d_bottom_top"
+                android:gravity="start"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingStart="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_small"
+                android:text="BURGER ADD-ONS"
+                android:textColor="@color/app_text_black3"
+                android:textSize="@dimen/text_normal"
+                android:visibility="gone" />
+
+            <gofereatsrestarant.views.customize.CustomRecyclerView
+                android:id="@+id/rvAddOnMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="always"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"
+        android:visibility="visible" />
+</RelativeLayout>

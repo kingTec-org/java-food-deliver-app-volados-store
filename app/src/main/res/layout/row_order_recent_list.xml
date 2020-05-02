@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rltOrderItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="@string/layout_direction"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:background="@drawable/item_background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/shadow_black_row" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_normal"
+        android:paddingStart="@dimen/margin_normal"
+        android:paddingTop="@dimen/margin_normal">
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvOrderId"
+            style="@style/ClanProForUBER_Book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1234"
+            android:textColor="@color/ub__white"
+            android:textSize="@dimen/text_large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/margin_normal">
+
+        <ImageView
+            android:id="@+id/ivThumbsUp"
+            android:layout_width="@dimen/height_medium"
+            android:layout_height="@dimen/height_medium"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:src="@drawable/thump" />
+
+        <ImageView
+            android:id="@+id/ivThumbsDown"
+            android:layout_width="@dimen/height_medium"
+            android:layout_height="@dimen/height_medium"
+            android:layout_marginStart="@dimen/margin_small"
+            android:src="@drawable/thumpdown" />
+    </LinearLayout>
+
+</RelativeLayout>

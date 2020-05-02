@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="@string/layout_direction"
+    android:layout_marginBottom="@dimen/margin_small"
+    android:layout_marginTop="@dimen/margin_small"
+    android:layout_weight="2"
+    android:divider="@drawable/gray_divider"
+    android:dividerPadding="10dp"
+    android:orientation="horizontal"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:id="@+id/lltUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.obs.CustomTextView
+            style="@style/ClanProForUBER_Book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_xsmall"
+            android:text="@string/user"
+            android:textColor="@color/app_text_black2"
+            android:textSize="@dimen/text_normal" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civUserImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarUser"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-50dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/gray"
+            android:indeterminateTintMode="src_atop"
+            android:padding="5dp" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvUserName"
+            style="@style/ClanProForUBER_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrderStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:text=""
+            android:textColor="@color/app_text_black4"
+            android:textSize="@dimen/text_large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lltDriver"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.obs.CustomTextView
+            style="@style/ClanProForUBER_Book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_xsmall"
+            android:text="@string/courier"
+            android:textColor="@color/app_text_black2"
+            android:textSize="@dimen/text_normal" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civDriverImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarDriver"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-50dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/gray"
+            android:indeterminateTintMode="src_atop"
+            android:padding="5dp" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvDriverName"
+            style="@style/ClanProForUBER_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrderStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:text=""
+            android:textColor="@color/app_text_black4"
+            android:textSize="@dimen/text_large" />
+    </LinearLayout>
+
+</LinearLayout>

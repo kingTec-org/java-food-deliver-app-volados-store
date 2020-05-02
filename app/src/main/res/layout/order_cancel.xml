@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_text_black6"
+    android:layoutDirection="@string/layout_direction"
+    android:paddingBottom="@dimen/text_normal">
+
+    <View
+        android:id="@+id/vBottom1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/text_normal"
+        android:background="@drawable/shadow_other_header" />
+
+    <com.obs.CustomTextView
+        android:id="@+id/tvProblem"
+        style="@style/ClanProForUBER_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vBottom1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/problem_let_customer"
+        android:textColor="@color/app_text_black3"
+        android:textSize="@dimen/text_normal" />
+
+    <RelativeLayout
+        android:id="@+id/rltContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvProblem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/text_normal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civUserImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/gray"
+            android:indeterminateTintMode="src_atop"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_toEndOf="@+id/civUserImage"
+            android:orientation="vertical">
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvUserName"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Sam David"
+                android:textAlignment="center"
+                android:textColor="@color/app_text_black3"
+                android:textSize="@dimen/text_normal" />
+
+            <com.obs.CustomTextView
+                android:id="@+id/tvUserPhone"
+                style="@style/ClanProForUBER_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="(222) 555-1234"
+                android:textColor="@color/app_text_black5"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lltOrderCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rltContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <com.obs.CustomButton
+            android:id="@+id/btnDelayOrder"
+            style="@style/ClanProForUBER_News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:background="@drawable/background_blue_outline"
+            android:clickable="true"
+            android:paddingEnd="@dimen/margin_normal"
+            android:paddingStart="@dimen/margin_normal"
+            android:text="@string/delay_order"
+            android:textAllCaps="true"
+            android:textColor="@color/app_green"
+            android:textSize="@dimen/text_normal" />
+
+        <com.obs.CustomButton
+            android:id="@+id/btnCancelOrder"
+            style="@style/ClanProForUBER_News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:background="@drawable/background_blue_outline"
+            android:clickable="true"
+            android:paddingEnd="@dimen/margin_small"
+            android:paddingStart="@dimen/margin_small"
+            android:text="@string/cancel_order"
+            android:textAllCaps="true"
+            android:textColor="@color/app_green"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+
+    <com.obs.CustomTextView
+        android:id="@+id/tvCustomerSupport"
+        style="@style/ClanProForUBER_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lltOrderCancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/support"
+        android:textColor="@color/app_text_black3"
+        android:textSize="@dimen/text_normal"
+        android:visibility="gone" />
+</RelativeLayout>

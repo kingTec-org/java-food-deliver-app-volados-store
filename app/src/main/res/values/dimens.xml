@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- text size -->
+    <dimen name="text_xsmall">8sp</dimen>
+    <dimen name="text_small">10sp</dimen>
+    <dimen name="text_medium">12sp</dimen>
+    <dimen name="text_normal">14sp</dimen>
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_xlarge">18sp</dimen>
+    <dimen name="text_xxlarge">20sp</dimen>
+
+    <dimen name="thumb_width">22dp</dimen>
+    <dimen name="thumb_height">22dp</dimen>
+
+    <dimen name="radius_corners">5dp</dimen>
+
+    <dimen name="header">56dp</dimen>
+
+    <dimen name="margin_normal">20dp</dimen>
+    <dimen name="margin_lsmall">15dp</dimen>
+    <dimen name="margin_large">25dp</dimen>
+    <dimen name="margin_xsmall">5dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_small_m">-20dp</dimen>
+    <dimen name="height_medium">30dp</dimen>
+    <dimen name="height_normal">50dp</dimen>
+    <dimen name="height_large">64dp</dimen>
+    <dimen name="image_height">100dp</dimen>
+
+</resources>

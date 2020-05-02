@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/orders"
+            android:icon="@drawable/order"
+            android:title="@string/orders" />
+        <item
+            android:id="@+id/order_history"
+            android:icon="@drawable/history"
+            android:title="@string/order_history" />
+        <item
+            android:id="@+id/menu"
+            android:icon="@drawable/menu"
+            android:title="@string/menu" />
+        <item
+            android:id="@+id/changelanguage"
+            android:icon="@drawable/language"
+            android:title="@string/language" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

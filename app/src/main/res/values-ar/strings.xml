@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY appname "GoferGrocery Store">]>
+<resources>
+
+
+    <string name="app_name">&appname;</string>
+    <string name="layout_direction">1</string>
+
+    <string name="network_failure">الرجاء التحقق من اتصال الانترنت الخاص بك</string>
+    <string name="internal_server_error">يرجى المحاولة مرة أخرى بعد في بعض الأحيان.</string>
+    <string name="login">"تسجيل الدخول"</string>
+    <string name="email">"البريد الإلكتروني"</string>
+    <string name="email_error">"أدخل عنوان بريد إلكتروني صالح"</string>
+    <string name="password">"كلمه السر"</string>
+    <string name="password_error">"كلمة المرور لا تقل عن 6 أحرف"</string>
+    <string name="forgot_password">"هل نسيت كلمة المرور؟"</string>
+    <string name="forgot_passwords">"هل نسيت كلمة المرور"</string>
+    <string name="reset_password_msg">"الرجاء إدخال البريد الخاص بك لإعادة تعيين كلمة المرور الخاصة بك"</string>
+    <string name="submit">"خضع"</string>
+    <string name="new_order">"طلب جديد"</string>
+    <string name="order_empty">"الطلب فارغ"</string>
+    <string name="out_for_delivery">"خارج للتوصيل"</string>
+    <string name="scheduled">"مجدولة في"</string>
+    <string name="recently_completed">"اكتمل مؤخرًا"</string>
+    <string name="accepting_order">"قبول الطلبات"</string>
+    <string name="accept_orders">"قبول الطلبات"</string>
+    <string name="pause_new_orders">"إيقاف الطلبات الجديدة"</string>
+    <string name="orders_paused">"الطلبات متوقفة"</string>
+    <string name="orders">"أوامر"</string>
+    <string name="order_history">"تاريخ الطلب"</string>
+    <string name="menu">"قائمة طعام"</string>
+    <string name="logout">"الخروج"</string>
+    <string name="order">طلب</string>
+    <string name="order_details">تفاصيل الطلب</string>
+    <string name="pickup">امسك</string>
+    <string name="addon">"إضافات"</string>
+    <string name="subtotal">حاصل الجمع</string>
+    <string name="tax">ضريبة</string>
+    <string name="order_msg">"طلب جاهز مبكرًا؟ ساعي يبعد حوالي 7 دقائق"</string>
+    <string name="food_done">يتم الطعام</string>
+    <string name="order_accepted">ترتيب مقبول</string>
+    <string name="picking_up">يختار أو ينتقي</string>
+    <string name="delivery_estimate">تقدير التسليم</string>
+    <string name="problem_let_customer">مشكلة؟ دع العميل يعرف</string>
+    <string name="delay_order">تأجيل الطلب</string>
+    <string name="cancel_order">الغاء الطلب</string>
+    <string name="other_reason">اسباب اخرى</string>
+    <string name="delay_reason">تأخير الأسباب</string>
+    <string name="cancel">إلغاء</string>
+
+    <string name="select_delay_time">حدد وقت التأخير</string>
+    <string name="select_cancel_reason">حدد السبب</string>
+    <string name="support">الدعم</string>
+    <string name="completed">منجز</string>
+    <string name="track_order">سائق المسار</string>
+    <string name="available">"متاح"</string>
+    <string name="unavailable_today">"غير متوفره"</string>
+    <string name="unavailable_indefinitely">"غير متاح إلى أجل غير مسمى"</string>
+    <string name="signout">"الخروج"</string>
+    <string name="signout_msg">"هل تريد بالتأكيد الخروج؟"</string>
+    <string name="issue_cancel">إلغاء</string>
+    <string name="done">فعله</string>
+    <string name="cancelled">ألغيت</string>
+    <string name="please_enable_permissions">يرجى تمكين أذونات التطبيق</string>
+    <string name="please_enable_location">يرجى تمكين خدمات الموقع</string>
+    <string name="you_have_no_orders">لا يوجد لديك أوامر</string>
+    <string name="you_have_no_menu_items">لا يوجد لديك عناصر القائمة</string>
+    <string name="you_have_no_past_orders">لا يوجد لديك أوامر</string>
+    <string name="back_to_exit">اضغط مرة أخرى للخروج.</string>
+    <string name="title_activity_resend_order_request">ResendOrderRequest</string>
+    <string name="tryagain">حاول مرة أخري</string>
+    <string name="contact_admin">اتصل بالمسؤول</string>
+    <string name="order_notes">ترتيب ملاحظات</string>
+    <string name="pick_up_later">التقاط لاحقا</string>
+    <string name="scheduled_order">"الطلب المقرر"</string>
+    <string name="access_fee">رسوم الوصول</string>
+    <string name="total">مجموع</string>
+    <string name="penalty">ضربة جزاء</string>
+    <string name="order_id_symbol">رقم التعريف الخاص بالطلب #</string>
+    <string name="order_id">رقم التعريف الخاص بالطلب</string>
+    <string name="applied_penalty">عقوبة تطبيقية</string>
+    <string name="contact_driver">مشكلة؟ دع السائق يعرف</string>
+    <string name="courier">التوصيل</string>
+    <string-array name="language">
+        <item>English</item>
+        <item>عربى</item>
+        <item>Português</item>
+    </string-array>
+    <string-array name="languageCode" translatable="false">
+        <item>en</item>
+        <item>ar</item>
+        <item>pt</item>
+    </string-array>
+    <string name="review">التعليقات</string>
+    <string name="font_UBERBook" translatable="false">"ClanProForUBER-Book"</string>
+    <string name="font_UBERMedium" translatable="false">"ClanProForUBER-Medium"</string>
+    <string name="font_UBERNews" translatable="false">"ClanProForUBER-News"</string>
+    <string name="selectcurrency">"اختر العملة"</string>
+    <string name="selectlanguage">اختار اللغة</string>
+    <string name="language">لغة</string>
+    <string name="user">المستخدم</string>
+    <string name="pick_up_address">عنوان الالتقاط</string>
+    <string name="drop_address">إسقاط العنوان</string>
+    <string name="item_for"> البند ل</string>
+    <string name="minutes">دقيقة</string>
+    <string name="loading">جار التحميل ...</string>
+    <string name="okay">حسنا</string>
+ </resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE resources [<!ENTITY appname "GoferGrocery Store">]>
+
+
+<resources>
+    <string name="app_name">&appname;</string>
+
+
+
+    <string name="base_url" translatable="false">"http://gofergrocery.trioangle.com/api/"</string>
+
+    //Google map and place API key
+    <string name="google_maps_key" translatable="false">AIzaSyCO4JTEK90hi9W8f56C3ZPvEJWJtplXMVg</string>
+
+    <string name="network_failure">Please check your Internet Connection</string>
+    <string name="internal_server_error">Please try again after sometimes.</string>
+
+    <string name="layout_direction">0</string>
+    <string name="login">"Log In"</string>
+    <string name="email">"Email"</string>
+    <string name="email_error">"Enter a valid email address"</string>
+    <string name="password">"Password"</string>
+    <string name="password_error">"Password minimum 6 characters"</string>
+    <string name="forgot_password">"Forgot Password?"</string>
+    <string name="forgot_passwords">"Forgot Password"</string>
+    <string name="reset_password_msg">"Please enter your mail to reset your password"</string>
+    <string name="submit">"Submit"</string>
+    <string name="new_order">"New Order"</string>
+    <string name="order_empty">"Order is empty"</string>
+    <string name="out_for_delivery">"Out For Delivery"</string>
+    <string name="scheduled">"Scheduled On"</string>
+    <string name="recently_completed">"Recently Completed"</string>
+    <string name="accepting_order">"Accepting Orders"</string>
+    <string name="accept_orders">"Accept Orders"</string>
+    <string name="pause_new_orders">"Pause New Orders"</string>
+    <string name="orders_paused">"Orders Paused"</string>
+    <string name="orders">"Orders"</string>
+    <string name="order_history">"Order History"</string>
+    <string name="menu">"Menu"</string>
+
+    <string name="logout">"Logout"</string>
+    <string name="order">Order</string>
+    <string name="order_details">Order Details</string>
+    <string name="pickup">Pickup</string>
+    <string name="addon">"Add-ons"</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="tax">Tax</string>
+    <string name="order_msg">"Order ready early? A courier is about 7 mins away"</string>
+    <string name="food_done">Grocery is done</string>
+    <string name="order_accepted">Order Accepted</string>
+
+    <string name="picking_up">Picking Up</string>
+    <string name="delivery_estimate">Delivery Estimate</string>
+    <string name="problem_let_customer">Problem? Let the customer know</string>
+    <string name="delay_order">Delay Order</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="other_reason">Other reasons</string>
+    <string name="delay_reason">Delay reasons</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_delay_time">Select delay time</string>
+    <string name="select_cancel_reason">Select reason</string>
+
+    <string name="support">Support</string>
+    <string name="completed">Completed</string>
+    <string name="track_order">Track Driver</string>
+    <string name="available">"Available"</string>
+    <string name="unavailable_today">"Unavailable"</string>
+    <string name="unavailable_indefinitely">"Unavailable Indefinitely"</string>
+    <string name="signout">"Logout"</string>
+    <string name="signout_msg">"Are you sure want to Logout?"</string>
+    <string name="issue_cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="cancelled">Cancelled</string>
+
+    <string name="please_enable_permissions">Please enable app permissions</string>
+    <string name="please_enable_location">Please enable location services</string>
+    <string name="you_have_no_orders">You Have No Orders</string>
+    <string name="you_have_no_menu_items">You Have No Menu items</string>
+    <string name="you_have_no_past_orders">You Have No Orders</string>
+    <string name="back_to_exit">Press back again to exit.</string>
+    <string name="title_activity_resend_order_request">ResendOrderRequest</string>
+    <string name="tryagain">Try again</string>
+    <string name="contact_admin">Contact Admin</string>
+    <string name="order_notes">Order Notes</string>
+    <string name="pick_up_later">Pick Up Later</string>
+    <string name="item_for">Item for </string>
+    <string name="scheduled_order">"scheduled order"</string>
+    <string name="access_fee">Access Fee</string>
+    <string name="total">Total</string>
+    <string name="penalty">Penalty</string>
+    <string name="order_id_symbol">Order Id #</string>
+    <string name="order_id">Order Id </string>
+    <string name="applied_penalty">Applied Penalty</string>
+    <string name="contact_driver">Problem? Let the driver know</string>
+    <string name="courier">Courier</string>
+    <string-array name="language">
+        <item>English</item>
+        <item>عربى</item>
+        <item>Português</item>
+    </string-array>
+    <string name="font_UBERBook" translatable="false">"ClanProForUBER-Book"</string>
+    <string name="font_UBERMedium" translatable="false">"ClanProForUBER-Medium"</string>
+    <string name="font_UBERNews" translatable="false">"ClanProForUBER-News"</string>
+    <string name="selectcurrency">"Select Currency"</string>
+    <string name="selectlanguage">Select Language</string>
+    <string name="language">Language</string>
+    <string name="review">Reviews</string>
+    <string name="user">User</string>
+    <string name="pick_up_address">Pickup Address</string>
+    <string name="drop_address">Drop Address</string>
+    <string-array name="languageCode" translatable="false">
+        <item>en</item>
+        <item>ar</item>
+        <item>pt</item>
+    </string-array>
+    <string name="minutes">Mins</string>
+    <string name="loading">Loading ...</string>
+    <string name="okay">Ok</string>
+</resources>

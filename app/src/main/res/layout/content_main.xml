@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/apptheme"
+    android:layoutDirection="@string/layout_direction"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="gofereatsrestarant.views.main.MainActivity">
+    <!--tools:showIn="@layout/activity_main"-->
+    <RelativeLayout
+        android:id="@+id/rlt_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.obs.CustomTextView
+            style="@style/ClanProForUBER_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/order_empty"
+            android:textColor="@color/ub__white"
+            android:textSize="@dimen/text_xxlarge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltOverall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rltStatus">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nsvOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rltStatus"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:id="@+id/llt_overall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <gofereatsrestarant.views.customize.CustomRecyclerView
+                        android:id="@+id/rvPendingOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="true"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="always"
+                        android:scrollbars="none" />
+
+                    <gofereatsrestarant.views.customize.CustomRecyclerView
+                        android:id="@+id/rvOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="always"
+                        android:scrollbars="none" />
+
+                    <LinearLayout
+                        android:id="@+id/lltScheduled"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_normal"
+                                android:layout_marginStart="@dimen/margin_normal"
+                                android:background="@color/line_color" />
+
+                            <com.obs.CustomTextView
+                                style="@style/ClanProForUBER_News"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="@dimen/margin_normal"
+                                android:background="@color/apptheme"
+                                android:paddingEnd="@dimen/margin_normal"
+                                android:paddingStart="@dimen/margin_normal"
+                                android:text="@string/scheduled"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_normal" />
+                        </RelativeLayout>
+
+                        <gofereatsrestarant.views.customize.CustomRecyclerView
+                            android:id="@+id/rvScheduled"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:nestedScrollingEnabled="false"
+                            android:overScrollMode="always"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lltOutDeliver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_normal"
+                                android:layout_marginStart="@dimen/margin_normal"
+                                android:background="@color/line_color" />
+
+                            <com.obs.CustomTextView
+                                style="@style/ClanProForUBER_News"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="@dimen/margin_normal"
+                                android:background="@color/apptheme"
+                                android:paddingEnd="@dimen/margin_normal"
+                                android:paddingStart="@dimen/margin_normal"
+                                android:text="@string/out_for_delivery"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_normal" />
+                        </RelativeLayout>
+
+                        <gofereatsrestarant.views.customize.CustomRecyclerView
+                            android:id="@+id/rvOutDeliver"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:nestedScrollingEnabled="false"
+                            android:overScrollMode="always"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lltRecent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_normal"
+                                android:layout_marginStart="@dimen/margin_normal"
+                                android:background="@color/line_color" />
+
+                            <com.obs.CustomTextView
+                                style="@style/ClanProForUBER_News"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="@dimen/margin_normal"
+                                android:background="@color/apptheme"
+                                android:paddingEnd="@dimen/margin_normal"
+                                android:paddingStart="@dimen/margin_normal"
+                                android:text="@string/recently_completed"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_normal" />
+                        </RelativeLayout>
+
+                        <gofereatsrestarant.views.customize.CustomRecyclerView
+                            android:id="@+id/rvRecent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:nestedScrollingEnabled="false"
+                            android:overScrollMode="always"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltEmptylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/margin_normal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivOrdericon"
+            android:layout_width="@dimen/height_normal"
+            android:layout_height="@dimen/height_normal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/order" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvEmptyorders"
+            style="@style/ClanProForUBER_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivOrdericon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="@string/you_have_no_orders"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_large" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltStatus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_large"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_black_full"
+        android:clickable="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/shadow_white_row" />
+
+        <ImageView
+            android:id="@+id/ivOrderStatus"
+            android:layout_width="@dimen/margin_normal"
+            android:layout_height="@dimen/margin_normal"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:layout_toStartOf="@+id/tvOrderStatus"
+            android:src="@drawable/check"
+            android:tint="@color/apptheme"/>
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvOrderStatus"
+            style="@style/ClanProForUBER_News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/accepting_order"
+            android:textAllCaps="false"
+            android:textColor="@color/apptheme"
+            android:textSize="@dimen/text_large" />
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvOrderTime"
+            style="@style/ClanProForUBER_News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_toEndOf="@+id/tvOrderStatus"
+            android:text="10:15"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

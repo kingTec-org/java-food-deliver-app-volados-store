@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rltMenuItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="@string/layout_direction"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/lltMainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_normal"
+        android:paddingEnd="@dimen/margin_normal"
+        android:paddingStart="@dimen/margin_normal"
+        android:paddingTop="@dimen/margin_normal">
+
+        <com.obs.CustomTextView
+            android:id="@+id/tvMainMenu"
+            style="@style/ClanProForUBER_Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:text="Most Popular Item"
+            android:textAlignment="viewStart"
+            android:textColor="@color/app_text_black3"
+            android:textSize="@dimen/text_large" />
+
+        <ImageView
+            android:id="@+id/ivMenuDropDown"
+            android:layout_width="@dimen/margin_normal"
+            android:layout_height="@dimen/margin_normal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:tint="@color/app_text_black3"
+            app:srcCompat="@drawable/ic_expand_more_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lltMainMenu"
+        android:background="@drawable/shadow_other_header" />
+</RelativeLayout>
